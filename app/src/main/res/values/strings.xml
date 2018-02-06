@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Barême Coinche</string>
+    <string name="sans_atout">Sans Atout</string>
+    <string name="tout_atout">Tout Atout</string>
+    <string name="annonce">Annonce</string>
+    <string name="faire_ses_points">Faire ses points</string>
+    <string name="faire_chuter">Faire chuter</string>
+</resources>
