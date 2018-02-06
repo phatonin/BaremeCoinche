@@ -5,4 +5,5 @@
     <color name="colorAccent">#7bae22</color>
     <color name="colorHighlightRow">#f98892</color>
     <color name="colorNormalRow">#ffffff</color>
+    <color name="colorBackground">#ffffff</color>
 </resources>
