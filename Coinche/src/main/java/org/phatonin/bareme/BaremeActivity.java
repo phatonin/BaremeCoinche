@@ -54,14 +54,14 @@ public class BaremeActivity extends AppCompatActivity {
             selection = savedInstanceState.getInt("selection");
         }
         if (sansAtout) {
-            onSansAtout(null);
+            sansAtout(null);
         }
         else {
-            onToutAtout(null);
+            toutAtout(null);
         }
         if (selection != -1) {
             View v = findViewById(selection);
-            onSelectRow(v);
+            selectRow(v);
         }
     }
 
@@ -73,16 +73,17 @@ public class BaremeActivity extends AppCompatActivity {
     }
 
     private void update(int[] faire, int[] chuter) {
+        unselectRows();
         updateColumn(FAIRE_IDS, faire);
         updateColumn(CHUTER_IDS, chuter);
     }
 
-    public void onSansAtout(View view) {
+    public void sansAtout(View view) {
         update(FAIRE_SANS_ATOUT, CHUTER_SANS_ATOUT);
         sansAtout = true;
     }
 
-    public void onToutAtout(View view) {
+    public void toutAtout(View view) {
         update(FAIRE_TOUT_ATOUT, CHUTER_TOUT_ATOUT);
         sansAtout = false;
     }
@@ -94,12 +95,17 @@ public class BaremeActivity extends AppCompatActivity {
         outState.putInt("selection", selection);
     }
 
-    public void onSelectRow(View view) {
+    public void unselectRows() {
         TableLayout table = findViewById(R.id.table);
         for (int i = 0; i < table.getChildCount(); ++i) {
             View v = table.getChildAt(i);
             v.setBackgroundResource(R.color.colorNormalRow);
         }
+        selection = -1;
+    }
+
+    public void selectRow(View view) {
+        unselectRows();
         view.setBackgroundResource(R.color.colorHighlightRow);
         selection = view.getId();
     }

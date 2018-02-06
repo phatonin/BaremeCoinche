@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:checked="true"
-            android:onClick="onSansAtout"
+            android:onClick="sansAtout"
             android:text="@string/sans_atout"
             android:textSize="24sp" />
 
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="onToutAtout"
+            android:onClick="toutAtout"
             android:text="@string/tout_atout"
             android:textSize="24sp" />
     </RadioGroup>
@@ -97,7 +97,7 @@
                 android:id="@+id/ligne-80"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onSelectRow">
+                android:onClick="selectRow">
 
                 <TextView
                     android:id="@+id/annonce-80"
@@ -127,7 +127,7 @@
                 android:id="@+id/ligne-90"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onSelectRow">
+                android:onClick="selectRow">
 
                 <TextView
                     android:id="@+id/annonce-90"
@@ -158,7 +158,7 @@
                 android:id="@+id/ligne-100"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onSelectRow">
+                android:onClick="selectRow">
 
                 <TextView
                     android:id="@+id/annonce-100"
@@ -188,7 +188,7 @@
                 android:id="@+id/ligne-110"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onSelectRow">
+                android:onClick="selectRow">
 
                 <TextView
                     android:id="@+id/annonce-110"
@@ -219,7 +219,7 @@
                 android:id="@+id/ligne-120"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onSelectRow">
+                android:onClick="selectRow">
 
                 <TextView
                     android:id="@+id/annonce-120"
@@ -250,7 +250,7 @@
                 android:id="@+id/ligne-130"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onSelectRow">
+                android:onClick="selectRow">
 
                 <TextView
                     android:id="@+id/annonce-130"
@@ -282,7 +282,7 @@
                 android:id="@+id/ligne-140"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onSelectRow">
+                android:onClick="selectRow">
 
                 <TextView
                     android:id="@+id/annonce-140"
@@ -313,7 +313,7 @@
                 android:id="@+id/ligne-150"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onSelectRow">
+                android:onClick="selectRow">
 
                 <TextView
                     android:id="@+id/annonce-150"
@@ -344,7 +344,7 @@
                 android:id="@+id/ligne-160"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onSelectRow">
+                android:onClick="selectRow">
 
                 <TextView
                     android:id="@+id/annonce-160"
