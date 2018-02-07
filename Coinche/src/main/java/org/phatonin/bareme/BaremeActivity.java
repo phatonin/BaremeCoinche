@@ -51,13 +51,15 @@ public class BaremeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_bareme);
         if (savedInstanceState != null) {
             sansAtout = savedInstanceState.getBoolean("sansAtout");
-            selection = savedInstanceState.getInt("selection");
         }
         if (sansAtout) {
             sansAtout(null);
         }
         else {
             toutAtout(null);
+        }
+        if (savedInstanceState != null) {
+            selection = savedInstanceState.getInt("selection");
         }
         if (selection != -1) {
             View v = findViewById(selection);
